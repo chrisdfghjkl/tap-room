@@ -10,7 +10,6 @@ function Keg(props){
         <p>{props.brewery}</p>
         <p>ABV: {props.abv}</p>
         <p>{props.price}</p>
-        <hr />
       </div>
     </React.Fragment>
   );
