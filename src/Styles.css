@@ -1,0 +1,16 @@
+#keg-card-holder{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.keg-card-single{
+  border: solid #eee 1px;
+  border-radius: 5px;
+  background-color: #eee;
+  padding: 10px;
+  width: 16%;
+  margin: 5px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
