@@ -18,7 +18,7 @@ const defaultKegs = [
     price: "$6.00"
   },
   {
-    name: "Cold Chillin;",
+    name: "Cold Chillin'",
     type: "Cream Ale",
     brewery: "Wild Ride",
     abv: "4.8",
