@@ -54,7 +54,9 @@ class KegControl extends React.Component {
     }
     return (
       <React.Fragment>
-        <button onClick={this.handleClick}>{buttonText}</button>
+        <div class="switch d-grid gap-2">
+          <button class="btn btn-lg btn-success b-wide" type='button' onClick={this.handleClick}>{buttonText}</button>
+        </div>
         {currentlyVisibleState}
       </React.Fragment>
     );
