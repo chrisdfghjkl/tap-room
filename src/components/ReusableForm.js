@@ -6,7 +6,7 @@ function ReusableForm(props) {
     <React.Fragment>
       <form onSubmit={props.formSubmissionHandler}>
       <div className="form-control keg-form">
-      <h3>New Keg</h3>
+        <h3>{props.titleText}</h3>
       <input
             type='text'
             name='name'
@@ -63,7 +63,8 @@ function ReusableForm(props) {
 
 ReusableForm.propTypes = {
   formSubmissionHandler: PropTypes.func,
-  buttonText: PropTypes.string
+  buttonText: PropTypes.string,
+  titleText: PropTypes.string
 };
 
 export default ReusableForm;
