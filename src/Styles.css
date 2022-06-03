@@ -3,6 +3,18 @@ body{
   background-size: cover;
 }
 
+.b-wide{
+  width: 30vw;
+}
+
+.switch{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
 #keg-card-holder{
   display: flex;
   flex-wrap: wrap;
@@ -19,3 +31,28 @@ body{
   margin-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
+.keg-card-detail{
+  border: solid #eee 1px;
+  border-radius: 5px;
+  background-color: #eee;
+  text-align: center;
+  padding: 10px;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#new-keg{
+  border: solid #eee 1px;
+  border-radius: 5px;
+  background-color: #eee;
+  text-align: center;
+  padding: 10px;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
