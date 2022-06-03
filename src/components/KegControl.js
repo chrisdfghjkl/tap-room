@@ -2,6 +2,7 @@ import React from 'react';
 import NewKegForm from './NewKegForm';
 import KegList from './KegList';
 import KegDetail from './KegDetail';
+import EditKegForm from './EditKegForm';
 
 class KegControl extends React.Component {
 
@@ -19,7 +20,8 @@ class KegControl extends React.Component {
     if (this.state.selectedKeg != null) {
       this.setState({
         formVisibleOnPage: false,
-        selectedKeg: null
+        selectedKeg: null,
+        editing: false
       });
     } else {
       this.setState(prevState => ({
@@ -51,11 +53,25 @@ class KegControl extends React.Component {
     this.setState({editing: true});
   }
 
+  handleEditingKegInList = (kegToEdit) => {
+    const editedMainKegList = this.state.mainKegList
+      .filter(keg => keg.id !== this.state.selectedKeg.id)
+      .concat(kegToEdit);
+    this.setState({
+        mainKegList: editedMainKegList,
+        editing: false,
+        selectedKeg: null
+      });
+  }
+
   render(){
     let currentlyVisibleState = null;
     let buttonText = null;
 
-    if (this.state.selectedKeg != null) {
+    if (this.state.editing ) {      
+      currentlyVisibleState = <EditKegForm keg = {this.state.selectedKeg} onEditKeg = {this.handleEditingKegInList} />
+      buttonText = "Return to Menu";
+    } else if (this.state.selectedKeg != null) {
       currentlyVisibleState = <KegDetail keg = {this.state.selectedKeg} onClickingDelete = {this.handleDeletingKeg} onClickingEdit = {this.handleEditClick} />
       buttonText = "Return to Menu";
     } else if (this.state.formVisibleOnPage) {
