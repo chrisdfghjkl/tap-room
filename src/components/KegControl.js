@@ -8,32 +8,9 @@ class KegControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mainKegList: [
-        {
-          name: "Pale Ale",
-          type: "Pale Ale",
-          brewery: "Saranac",
-          abv: "5.5",
-          price: "5.00"
-        },
-        {
-          name: "Burned Bridges",
-          type: "IPA",
-          brewery: "Ex Novo",
-          abv: "6.2",
-          price: "6.00"
-        },
-        {
-          name: "Cold Chillin'",
-          type: "Cream Ale",
-          brewery: "Wild Ride",
-          abv: "4.8",
-          price: "5.00"
-        }
-      ],
+      mainKegList: [],
       formVisibleOnPage: false,
       selectedTicket: null
-      // mainKegList: []
     }
   }
 
@@ -57,11 +34,15 @@ class KegControl extends React.Component {
   render(){
     let currentlyVisibleState = null;
     let buttonText = null;
-    if (this.state.formVisibleOnPage) {
+
+    if (this.state.selectedKeg != null) {
+      currentlyVisibleState = <KegDetail keg = {this.state.selectedKeg} />
+      buttonText = "Return to Menu";
+    } else if (this.state.formVisibleOnPage) {
       currentlyVisibleState = <NewKegForm onNewKegCreation={this.handleAddingNewKegToMenu} />;
       buttonText = "Return to Menu";
     } else {
-      currentlyVisibleState = <KegList kegList={this.state.mainKegList}/>;
+      currentlyVisibleState = <KegList kegList={this.state.mainKegList} onKegSelection={this.handleChangingSelectedKeg}/>;
       buttonText = "Add Keg";
     }
     return (
