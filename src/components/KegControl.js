@@ -47,6 +47,10 @@ class KegControl extends React.Component {
     });
   }
 
+  handleEditClick = () => {
+    this.setState({editing: true});
+  }
+
   render(){
     let currentlyVisibleState = null;
     let buttonText = null;
