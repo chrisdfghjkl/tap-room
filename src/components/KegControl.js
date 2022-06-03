@@ -31,6 +31,7 @@ class KegControl extends React.Component {
         }
       ],
       formVisibleOnPage: false,
+      selectedTicket: null
       // mainKegList: []
     }
   }
