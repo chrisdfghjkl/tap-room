@@ -2,6 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Keg(props){
+  let kegStatus = "100%";
+  
+  if (props.pints < 94) {
+    kegStatus = "75%";
+  } 
+
   return (
     <React.Fragment>
       <div className="container">
@@ -11,7 +17,7 @@ function Keg(props){
           <p>{props.brewery}</p>
           <p>ABV: {props.abv}%</p>
           <p>${props.price}</p>
-          <p>Pints remaining: {props.pints}</p>
+          <p>Status: {kegStatus}</p>
         </div>
       </div>
     </React.Fragment>
