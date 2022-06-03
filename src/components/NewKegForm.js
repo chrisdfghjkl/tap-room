@@ -11,45 +11,59 @@ function NewKegForm(props){
 
   return (
     <React.Fragment>
-      <div className="new-keg">
+      <form onSubmit={handleNewKegFormSubmission}>
+        <div id="new-keg" className="form-control">
         <h3>New Keg</h3>
-        <form onSubmit={handleNewKegFormSubmission}>
-          <div className="form-control">
-            <input 
-              type='text'
-              name='name'
-              placeholder="Name"
-              required
-            />
-            <input 
-              type='text'
-              name='type'
-              placeholder="Beer Type"
-              required
-            />
-            <input 
-              type='text'
-              name='brewery'
-              placeholder="Brewery"
-              required
-            />
-            <input 
-              type='number'
-              step='any'
-              name='abv'
-              placeholder="%ABV"
-              required
-            />
-            <input 
-              type='number'
-              name='price'
-              placeholder="Price"
-              required
-            />
-            <button type='submit' className='btn btn-success'>Add Keg</button>
-          </div>
-      </form>
-      </div>
+          <input
+            type='text'
+            name='name'
+            placeholder="Name"
+            required
+          />
+          <br />
+          <input 
+            type='text'
+            name='type'
+            placeholder="Beer Type"
+            required
+          />
+          <br />
+          <input 
+            type='text'
+            name='brewery'
+            placeholder="Brewery"
+            required
+          />
+          <br />
+          <input 
+            type='number'
+            step='any'
+            name='abv'
+            placeholder="%ABV"
+            required
+          />
+          <br />
+          <input 
+            type='number'
+            step='any'
+            name='price'
+            placeholder="Price"
+            required
+          />
+          <br/>
+          <input 
+            type='number'
+            step='any'
+            max='124'
+            name='pints'
+            placeholder="Pints"
+            required
+          />
+          <br />
+          <br />
+          <button type='submit' className='btn btn-success'>Add Keg</button>
+        </div>
+    </form>
     </React.Fragment>
   );
 }
