@@ -44,7 +44,7 @@ body{
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-#new-keg{
+.keg-form{
   border: solid #eee 1px;
   border-radius: 5px;
   background-color: #eee;
