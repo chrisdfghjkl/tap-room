@@ -36,6 +36,7 @@ function NewKegForm(props){
             />
             <input 
               type='number'
+              step='any'
               name='abv'
               placeholder="%ABV"
               required
