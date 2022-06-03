@@ -6,9 +6,7 @@ function NewKegForm(props){
 
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
-    console.log(event.target.names.value);
-    console.log(event.target.location.value);
-    console.log(event.target.issue.value);
+    props.onNewTicketCreation({name: event.target.name.value, type: event.target.type.value, brewery: event.target.brewery.value, abv: event.target.abv.value, price: event.target.price.value, id: v4()});
   }
 
   return (
