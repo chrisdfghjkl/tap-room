@@ -10,7 +10,8 @@ class KegControl extends React.Component {
     this.state = {
       mainKegList: [],
       formVisibleOnPage: false,
-      selectedKeg: null
+      selectedKeg: null,
+      editing: false
     }
   }
 
