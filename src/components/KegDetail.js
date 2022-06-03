@@ -13,6 +13,7 @@ function KegDetail(props){
           <p>{keg.brewery}</p>
           <p>ABV: {keg.abv}%</p>
           <p>${keg.price}</p>
+          <p>{keg.pints}</p>
           <button className="btn btn-danger" type="button" onClick={()=> onClickingDelete(keg.id) }>Remove Keg</button>
         </div>
       </div>
