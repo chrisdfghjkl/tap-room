@@ -3,13 +3,60 @@ import NewKegForm from './NewKegForm';
 import KegList from './KegList';
 import KegDetail from './KegDetail';
 import EditKegForm from './EditKegForm';
+import { v4 } from "uuid";
 
 class KegControl extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      mainKegList: [],
+      mainKegList: [
+        {
+          name: 'Pale Ale',
+          type: 'Pale Ale',
+          brewery: 'Saranac',
+          abv: '5.5',
+          price: '4.00',
+          pints: 124,
+          id: v4()
+        },
+        {
+          name: 'Vortex IPA',
+          type: 'IPA',
+          brewery: 'Ft. George',
+          abv: '7.7',
+          price: '7.00',
+          pints: 124,
+          id: v4()
+        },
+        {
+          name: 'Rose City Sour',
+          type: 'Sour',
+          brewery: 'Cascade Brewing',
+          abv: '5.7',
+          price: '5.00',
+          pints: 124,
+          id: v4()
+        },
+        {
+          name: 'Kollaps',
+          type: 'Kölsch',
+          brewery: 'Wayfinder Beer',
+          abv: '4.7',
+          price: '6.50',
+          pints: 124,
+          id: v4()
+        },
+        {
+          name: 'Kinda Dry',
+          type: 'Cider',
+          brewery: 'Portland Cider Co.',
+          abv: '6.9',
+          price: '6.00',
+          pints: 124,
+          id: v4()
+        }
+      ],
       formVisibleOnPage: false,
       selectedKeg: null,
       editing: false
