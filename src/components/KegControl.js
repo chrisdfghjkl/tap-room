@@ -7,8 +7,31 @@ class KegControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      mainKegList: [
+        {
+          name: "Pale Ale",
+          type: "Pale Ale",
+          brewery: "Saranac",
+          abv: "5.5",
+          price: "$5.00"
+        },
+        {
+          name: "Burned Bridges",
+          type: "IPA",
+          brewery: "Ex Novo",
+          abv: "6.2",
+          price: "$6.00"
+        },
+        {
+          name: "Cold Chillin'",
+          type: "Cream Ale",
+          brewery: "Wild Ride",
+          abv: "4.8",
+          price: "$5.00"
+        }
+      ],
       formVisibleOnPage: false,
-      mainKegList: []
+      // mainKegList: []
     }
   }
 
