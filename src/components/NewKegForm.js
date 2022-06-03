@@ -46,7 +46,7 @@ function NewKegForm(props){
               placeholder="Price"
               required
             />
-            <Button type='submit' className='btn btn-success'>Add Keg</Button>
+            <button type='submit' className='btn btn-success'>Add Keg</button>
           </div>
       </form>
       </div>
