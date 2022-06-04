@@ -1,5 +1,5 @@
 body{
-  background: url(https://images.unsplash.com/photo-1546962339-5ff89552b8ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80) no-repeat center center fixed;
+  background: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -22,9 +22,10 @@ body{
 }
 
 .keg-card-single{
-  border: solid #eee 1px;
+  border: solid #292b2c 1px;
+  color: #f7f7f7;
   border-radius: 5px;
-  background-color: #eee;
+  background-color: #292b2c;
   padding: 10px;
   width: 25%;
   margin: 5px;
@@ -33,9 +34,10 @@ body{
 }
 
 .keg-card-detail{
-  border: solid #eee 1px;
+  border: solid #292b2c 1px;
   border-radius: 5px;
-  background-color: #eee;
+  background-color: #292b2c;
+  color: #f7f7f7;
   text-align: center;
   padding: 10px;
   width: 60%;
@@ -45,9 +47,10 @@ body{
 }
 
 .keg-form{
-  border: solid #eee 1px;
+  border: solid #292b2c 1px;
   border-radius: 5px;
-  background-color: #eee;
+  background-color: #292b2c;
+  color: #f7f7f7;
   text-align: center;
   padding: 10px;
   width: 60%;
@@ -56,3 +59,43 @@ body{
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.price{
+  font-size: 15px;
+  float: right;
+}
+
+.brew-info{
+  text-align: center;
+}
+
+.edit-button{
+  margin-right: 10px;
+}
+
+.delete-button{
+  margin-left: 10px;
+}
+
+.full{
+  color: darkgreen;
+}
+
+.seven-five{
+  color: rgb(5, 181, 5);
+}
+
+.fifty{
+  color: rgb(220, 220, 56);
+}
+
+.two-five{
+  color: rgb(204, 112, 0);
+}
+
+.ten{
+  color: red;
+}
+
+.tapped{
+  color: darkred;
+}
