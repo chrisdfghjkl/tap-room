@@ -14,6 +14,7 @@ function ReusableForm(props) {
             required
           />
           <br />
+          <br />
           <input 
             type='text'
             name='type'
@@ -21,12 +22,14 @@ function ReusableForm(props) {
             required
           />
           <br />
+          <br />
           <input 
             type='text'
             name='brewery'
             placeholder="Brewery"
             required
           />
+          <br />
           <br />
           <input 
             type='number'
@@ -36,20 +39,12 @@ function ReusableForm(props) {
             required
           />
           <br />
+          <br />
           <input 
             type='number'
             step='any'
             name='price'
             placeholder="Price"
-            required
-          />
-          <br/>
-          <input 
-            type='number'
-            step='any'
-            max='124'
-            name='pints'
-            placeholder="Pints"
             required
           />
           <br />
