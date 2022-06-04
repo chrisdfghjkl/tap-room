@@ -3,7 +3,7 @@
 
 #### _React website for a tap room to track their kegs._
 
-#### By _**Chris Depastenen**_
+#### By _**Chris Depastene**_
 
 ## Table of Contents
 
